@@ -1,0 +1,237 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laurence Douchar - Neuropsychologue</title>
+  <meta name="description" content="Page professionnelle pour neuropsychologue — single page app, vert & blanc." />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="photo-circle" id="headerPhoto">
+          <img src="img/my_photo.jpg" alt="Photo du neuropsychologue" />
+        </div>
+        <div>
+          <div class="title">Laurence Douchar</div>
+          <div class="subtitle">Neuropsychologue</div>
+        </div>
+      </div>
+
+      <nav id="mainNav">
+        <a onclick="scrollToSection('bienvenue')" class="active">Bienvenue</a>
+        <a onclick="scrollToSection('specialites')">Spécialités</a>
+        <a onclick="scrollToSection('tarifs')">Tarifs</a>
+        <a onclick="scrollToSection('lieux')">Lieux</a>
+        <a onclick="scrollToSection('remboursements')">Remboursements</a>
+        <a onclick="scrollToSection('contact')">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="bienvenue" class="hero card">
+        <div class="welcome">
+          <h1>Bienvenue</h1>
+          <p>Neuropsychologue passionnée et bienveillante spécialisée dans les troubles neurodéveloppementaux chez l'enfant
+            (TDAH, QI, troubles des apprentissages, ...). </p>
+
+          <div class="cta">
+            <button class="btn" onclick="scrollToSection('contact')">Me contacter</button>
+            <button class="btn ghost" onclick="scrollToSection('lieux')">Voir mes lieux</button>
+          </div>
+        </div>
+
+        <aside class="info-side">
+          <div class="card">
+            <strong>Horaires</strong>
+            <div>Lundi - Samedi : 8h - 21h<br />Consultation sur RDV uniquement</div>
+          </div>
+          <div class="card">
+            <strong>Diplôme</strong>
+            <div>Master en neuropsychologie et développement cognitif — Université Libre de Bruxelles</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="specialites" class="card">
+        <h2>Spécialités</h2>
+        <div class="skills">
+          <div class="skill">Bilan neuropsychologique</div>
+          <div class="skill">Bilan intellectuel</div>
+          <div class="skill">Trouble Deficitaire de l'Attention avec ou sans Hyperactivité (TDAH)</div>
+           <div class="skill">Trouble des apprentissages (troubles dys)</div>
+            <div class="skill">Trouble du développement intellectuel</div>
+          <div class="skill">Prise en charge cognitive</div>
+        </div>
+      </section>
+
+      <section id="bonasavoir" class="card">
+        <h2>Bon à savoir</h2>
+        <div class="faqs">
+          <div class="faq"><strong>Durée d'un bilan</strong>
+            <div>Un bilan complet dure entre 1 et 4 séances selon la demande. Contactez-moi pour discuter du motif de
+              consultation.</div>
+          </div>
+          <div class="faq"><strong>Remboursement</strong>
+            <div>Les séances de neuropsychologie peuvent être partiellement remboursés selon votre mutuelle.</div>
+          </div>
+          <div class="faq"><strong>Documents à apporter</strong>
+            <div>Vignette mutuelle, anciens bilans (para)médicaux, lunettes et appareils auditifs (si nécessaire).</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tarifs" class="card">
+        <h2>Tarifs</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Prestation</th>
+              <th>Durée</th>
+              <th>Tarif</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="titleTarif">Bilan suspicion TDA/H</td>
+              <td>3 x 1h30</td>
+              <td>300 €</td>
+            </tr>
+            <tr>
+              <td id="titleTarif">Bilan intellectuel</td>
+              <td>1 x 1h30</td>
+              <td>100 €</td>
+            </tr>
+            <tr>
+              <td id="titleTarif">Prise en charge cognitive</td>
+              <td>45 min</td>
+              <td>50 €</td>
+            </tr>
+            <tr>
+              <td id="titleTarif">Remise des conclusions</td>
+              <td>45 min</td>
+              <td>50 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="remboursements" class="card">
+        <h2>Remboursements</h2>
+        <p>Voici un aperçu des conditions de remboursement selon les principales mutualités.
+          Pour plus d’informations, consultez les documents officiels ci-dessous.</p>
+
+        <div class="mutuelles">
+          <article class="mutuelle">
+            <h3>Partenamut</h3>
+            <p>20€ / séance</p>
+            <a href="https://my.partenamut.be/ajax/documentPreview.html?id=5385&filename=avantages-partenamut-demande-dintervention.pdf" class="pdf-link">📄 Télécharger le document</a>
+          </article>
+          <article class="mutuelle">
+            <h3>Mutualité Chrétienne</h3>
+            <p>20€ / séance</p>
+            <a href="https://cm-mc.bynder.com/m/3e57248fd5a5d1d4/original/Psychologie-demande-d-intervention.pdf" class="pdf-link">📄 Consulter le document</a>
+          </article>
+
+          <article class="mutuelle">
+            <h3>Mutualité Neutre</h3>
+            <p>20€ / séance</p>
+            <a href="https://www.lamn.be/sites/default/files/uploads/Formulaires/SC%20-%20Psychologie.pdf" class="pdf-link">📄 Consulter le document</a>
+          </article>
+
+          <article class="mutuelle">
+            <h3>Mutualité Libérale</h3>
+            <p>20€ / séance</p>
+            <a href="https://www.lm-ml.be/sites/default/files/media/files/2024-08/409-FACVA019R.pdf" class="pdf-link">📄 Consulter le document</a>
+          </article>
+
+          <article class="mutuelle">
+            <h3>Solidaris</h3>
+            <p>20€ / séance</p>
+            <a href="https://www.solidaris-wallonie.be/api/wp-content/uploads/2023/10/Formulaire-de-demande-dintervention-Psychologie-2024.pdf" class="pdf-link">📄 Consulter le document</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="lieux" class="card">
+        <h2>Lieux de consultation</h2>
+        <div class="carousel" id="carousel">
+          <div class="slides" id="slides">
+            <article class="slide">
+              <img src="img/centre_ath.jpg" alt="Cabinet Bruxelles" />
+              <div class="meta">
+                <h3>Centre l'Odyssée Ath</h3>
+                <p>Chaussée de Mons 160, 7800 Ath.</p>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img src="img/centre_blc.jpg" alt="Maison Médicale Ixelles" />
+              <div class="meta">
+                <h3>Centre l'Odyssée Braine-le-Comte</h3>
+                <p>Rue de la Station 61, 7090 Braine-le-Comte</p>
+              </div>
+            </article>
+
+            <!---
+            <article class="slide">
+              <img src="img/chr.jpeg" alt="CHR - Enghien" />
+              <div class="meta">
+                <h3>Centre médical d'Enghien (CHR)</h3>
+                <p>Place du Vieux Marché 56, 7850 Enghien</p>
+              </div>
+            </article>
+            -->
+          </div>
+          <div class="controls">
+            <button id="prevBtn">◀</button>
+            <button id="nextBtn">▶</button>
+          </div>
+        </div>
+        <div class="dots" id="dots"></div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+
+        <div class="contact-card">
+          <div class="contact-row"><strong>Téléphone:</strong><span>+32 476 83 52 15</span></div>
+          <div class="contact-row"><strong>Email:</strong><span>laurence.neuropsy@gmail.com</span></div>
+        </div>
+
+        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+          <label for="name">Nom</label>
+          <input id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="city">Ville</label>
+          <input id="city" name="city" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <div class="form-actions">
+            <button class="btn ghost" type="reset">Réinitialiser</button>
+            <button class="btn" type="submit">Envoyer</button>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <div>Laurence Douchar — Neuropsychologue</div>
+      </footer>
+    </main>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
