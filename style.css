@@ -608,3 +608,18 @@ footer {
         height: 76px
     }
 }
+
+.map-link {
+    display: inline-block; /* Permet d'appliquer une largeur/hauteur */
+    padding: 10px 15px;
+    background-color: #4285F4; /* Le bleu de Google */
+    color: white;
+    text-decoration: none; /* Enlève le soulignement */
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.map-link:hover {
+    background-color: #3367D6;
+}
